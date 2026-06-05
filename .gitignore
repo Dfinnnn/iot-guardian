@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+
+# Data — keep large parquet/model artifacts out of git unless intentionally added
+# (comment these out later if you decide to commit them for HF deploy)
+*.parquet
+*.pkl
