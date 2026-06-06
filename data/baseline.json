@@ -1,0 +1,7 @@
+{
+  "source": "train split, normal rows (label==0)",
+  "n_normal_rows": 75997,
+  "normal_td_median": 5.7e-05,
+  "normal_td_p05": 9e-06,
+  "normal_td_p25": 2.9e-05
+}

@@ -13,7 +13,9 @@ env/
 .vscode/
 .idea/
 
-# Data — keep large parquet/model artifacts out of git unless intentionally added
-# (comment these out later if you decide to commit them for HF deploy)
+# Data — large artifacts stay out of git by default...
 *.parquet
 *.pkl
+# ...except the files Page 2 needs deployed to Hugging Face:
+!data/test.parquet
+# (baseline.json is small and not ignored — it commits normally)

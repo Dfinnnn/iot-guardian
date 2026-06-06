@@ -25,5 +25,11 @@ and shows the big-data preprocessing pipeline (Big Data & Cloud Computing).
 ## Run locally
 ```bash
 pip install -r requirements.txt
+
+# one-time data setup (Page 2):
+#   1. copy your EDA test.parquet into data/
+#   2. generate the normal baseline from train.parquet:
+python make_baseline.py "path/to/eda_outputs/train.parquet"
+
 streamlit run app.py
 ```
