@@ -13,9 +13,24 @@ env/
 .vscode/
 .idea/
 
-# Data — large artifacts stay out of git by default...
+# Development folders
+notebooks/
+outputs/
+
+# Large training datasets
 *.parquet
-*.pkl
-# ...except the files Page 2 needs deployed to Hugging Face:
-!data/test.parquet
-# (baseline.json is small and not ignored — it commits normally)
+
+# Keep deployment files
+!data/demo_stream.csv
+
+# Exclude training datasets
+data/train.parquet
+data/val.parquet
+data/test.parquet
+
+# Keep all deployment models
+!models/*.pkl
+!models/*.keras
+
+# Optional
+Thumbs.db
