@@ -1,35 +1,51 @@
----
-title: IoT Guardian
-emoji: 🛡️
-colorFrom: blue
-colorTo: indigo
-sdk: streamlit
-sdk_version: 1.58.0
-app_file: app.py
-pinned: false
----
+# IoT Guardian
 
-# IoT Guardian — AI-Powered Threat Detection for Smart Healthcare
+🛡️ AI-Powered Threat Detection for Smart Healthcare
 
-Academic group research project (UMPSA, BSD elective). Monitors healthcare IoT (IoMT)
-network traffic: detects attacks (Deep Learning), scores device risk (IoT Analytics),
-and shows the big-data preprocessing pipeline (Big Data & Cloud Computing).
+IoT Guardian is a smart healthcare cybersecurity platform designed to detect malicious IoMT (Internet of Medical Things) network traffic using Machine Learning, Deep Learning, and Explainable AI techniques.
 
-## Pages
-1. **Live Threat Monitor** — model scores replayed traffic; alerts fire on detection.
-2. **Device Risk Centre** — per-device risk score, sortable table, quarantine flags.
-3. **Big Data Pipeline** — PySpark preprocessing output, throughput, pipeline diagram.
+## Features
 
-> Deploy shell. Page content is wired up in later build steps.
+### 1. Live Threat Monitor
+- Real-time traffic replay simulation
+- MLP-based attack detection
+- Threat severity classification
+- SHAP-powered threat explanations
 
-## Run locally
-```bash
-pip install -r requirements.txt
+### 2. Device Risk Centre
+- Device risk assessment
+- Risk scoring dashboard
+- Device monitoring and profiling
 
-# one-time data setup (Page 2):
-#   1. copy your EDA test.parquet into data/
-#   2. generate the normal baseline from train.parquet:
-python make_baseline.py "path/to/eda_outputs/train.parquet"
+### 3. Big Data Pipeline
+- Data preprocessing workflow
+- Feature engineering pipeline
+- System architecture visualization
+- Executive analytics dashboard
 
-streamlit run app.py
-```
+### 4. AI Explainability Centre
+- SHAP feature importance analysis
+- Model performance comparison
+- Neural network architecture overview
+- Explainable AI insights
+
+## Technology Stack
+
+- Streamlit
+- TensorFlow / Keras
+- Scikit-learn
+- SHAP
+- Plotly
+- Pandas
+- NumPy
+
+## Project Structure
+
+```text
+iot-guardian/
+├── app.py
+├── pages/
+├── models/
+├── data/
+├── requirements.txt
+└── README.md
